@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: black;
+    padding-top: 5.5rem;
+}
+
+
+/* Hover dropdown for Bootstrap */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* optional: to align dropdown correctly */
+}
+
+.nav-item.dropdown .dropdown-toggle::after {
+  transition: transform 0.2s ease;
+  
+}
+
+.nav-item.dropdown:hover .dropdown-toggle::after {
+  transform: rotate(180deg); /* optional arrow animation */
+}
+
+.dropdown-item{
+    color: navy;
+}
+
+.dropdown-item:hover{
+    background-color: bisque;
+}
+
+.custom-navbar{
+    opacity: 0.8;
+}
+
+.nav-link{
+    color: navy;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+ #backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: none;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  }
+
+  /* fade animate */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 2s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.footer-para{
+    text-align: center;
+    color: navy;
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.quick-link-1{
+    color: navy;
+    font-weight: bold;
+}
+
+.quick-link-1:hover{
+    color: brown;
+}
+
+.details-shop{
+    color: navy;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+.details-shop:hover{
+    color: green;
+}
+
+.bg-custom-footer-2{
+    background-color: navy;
+}
+
+.text-custom-about{
+    color: navy;
+}
+
+.text-custom-footer-link{
+    color: rgb(31, 31, 73);
+}
+
+.text-custom-developed{
+    color: navy;
+}
+
+.text-custom-developed:hover{
+    color: black;
+}
+
+
+.text-custom-about:hover{
+    color: red;
+}
+
+.bg-custom-make-different{
+background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRFsdajx9GW6n4crFrXmbW-cM4a16xU97guw&s');
+background-size: cover;
+}
+
+.bg-custom-satisfaction{
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwcIDQ0NBwcHBwcHBw0HBwcHBw8ICQcNFREWFhURFRUYKCggGBoxJxMTITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDw0NDisZFRkrNysrKystKysrKysrLSsrKysrKysrKysrKystKysrKysrKysrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAYAAADAQEAAAAAAAAAAAAAAAAAAQIDBf/EABcQAQEBAQAAAAAAAAAAAAAAAAABAhH/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBv/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8A68BGr3RxUSqDNXlplnFwYrWLyzy0yjlWkXGcaRHKrhxMVEYqoZQDJgAAAAAAAAACBkCSqqmjURUVpUVW4zrOtaz0rpGemda6Z0dYzqauoqukIAKqTI4inDhQ4JVxpGcXBzrTLTLPK8o51rFxnFxHKtIqIiojFVDKGMmBAIAAAAAAAAKRkBFVVNFiairqarcZ1npppGh0jPTPTTTPSusZ1NXUVXSJACtJOFAimqJMRcXGcXBitcryzi4jnWuWkZZaRHKri4iKg51cOJhxGVAjEAAAAAAAAAAAqVOkKmoq6iq1EVnppUaHSM9M9NNM9K6xnUVekVXSJACtpBGimcIAqLiIqDFaRpllGmajnWuVxnmrg51rFREXEc6qKiYpGKZwgMmAAAAAAAAKABUqdKipqKuoqtRGkVdZ6HSI0z000z0rrGekVdRVdIkAK2gyOI0DIxDiolUGauVpllFwYrXNaZrLLSVHKxpFxnKuVHOtIqIiojFUZHBkwRiAAAAAAAIBU06VFTU1VRVbidM9LqNDpGememmmeldYioq6iq6RIAVpBkEaMyAhxUSYi4uVnFwZrTNaSsouVHKxrGmWUq5Uc7GsqozlXKOdXDiYqIzTOFAMmAAAAAUjICKmmjUTU1VRVaiKjS6z0rrEaZ1emdHSJqKqpqusIACoAA0YIxDNJgqKlQqDNaRpmsouUc7Gsq4ylaSo52NZVxlFxHOxpFREqojFVDIxkwRiAAgBGQpVNOpo1CqKqs6rcKs9K1UaqukRpnV1FV1iaiqqRuEABpIAFBkAMyAijiTEXKuVnFSjNjXNaSspV5qOVjXNXKyzWkqOdjSLjOVcHOrhphxGVAjEABACpposKptOotVqFUWqtZ2jchWs9VVrO1XWQqzqqiq6QqVFIbAAFSABQAAOAjEOAjBUVERUGa0lXmsouUYsbSrlZZq81HKxrFxnFyo52NJTiJVRGKsF0dEMF0qApUWpqrCtTadqLRuQrWdqrUWq6SJtRadqKrpIVRTqaOkBACgEBSAAoAAA4RgDIxAqJMRcXKzioM1rK0lYytJUc7Gsq5WUq5UcrGsqpWcqpRixZp6EZxRWkVqgtTadqLRqQWotO1FqukhWs7TtRaOkhWptFTarchUgQ2AAKCMAkACgAAAAIYAAzKAFRUQqDNaSrlZRcoxWsq5Wcq5Uc7GkqpWcq5Uc7F9HU9HRnFdLpdK0XBam07UWjUhWotO1FqtyFam07UWq6SFU06kbgIAaAAAAAEgAUAAQAADAAAwAM4AJVRcAGKuLlARirlVKAOdPpgIyOlaAKmotAVqItTaQHSJtRTCtxJADRAAUAAAAAf/Z');
+background-size: cover;
+}
