@@ -59,26 +59,23 @@ fadeElements.forEach(el => {
 
 // show message
 
- function sendMessage() {
-    const email = document.getElementById('floatingInput').value.trim();
-    const subject = document.getElementById('floatingtext').value.trim();
-    const message = document.getElementById('floatingTextarea').value.trim();
+  function sendMessage() {
+    const name = document.getElementById('floatingInput').value.trim();
+    const appliances = document.getElementById('floatingtext').value.trim();
+    const details = document.getElementById('floatingTextarea').value.trim();
 
-    if (!email || !subject || !message) {
+    if (!name || !appliances || !details) {
       alert('Please fill in all fields before sending.');
       return;
     }
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-if (!emailPattern.test(email)) {
-    alert("Please enter a valid email address.");
-    return;
-}
 
-    const phoneNumber = '923333983684'; // WhatsApp number without '+'
-    const text = `Email: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
+
+    const phoneNumber = '923108422915'; // WhatsApp number without '+'
+    const text = `Name: ${name}%0AAppliances: ${appliances}%0ADetails: ${details}`;
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${text}`;
 
     window.open(whatsappURL, '_blank');
   }
+
 
 
